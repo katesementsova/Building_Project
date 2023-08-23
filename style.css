@@ -1,0 +1,40 @@
+header {
+  width: 1920px;
+  height: 740px;
+  background-image: url(assets/images/bridge.svg);
+}
+
+header h1 {
+  width: 734px;
+  height: 171px;
+}
+header h5 {
+  width: 734px;
+  height: 22px;
+}
+
+header h1,
+h5 {
+  color: white;
+  text-align: center;
+}
+
+.experience {
+  display: flex;
+  list-style-type: none;
+}
+
+.numbers {
+  list-style-type: none;
+  text-align: center;
+}
+
+.num {
+  color: #f7654a;
+  /* font-family: Oswald; */
+}
+
+.year,
+.market {
+  color: white;
+}
