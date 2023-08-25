@@ -1,40 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 1920px;
+}
+
 header {
-  width: 1920px;
-  height: 740px;
+  padding-top: 192px;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: url(assets/images/bridge.svg);
+  max-height: 740px;
+  display: flex;
+  flex-direction: column;
 }
 
-header h1 {
-  width: 734px;
-  height: 171px;
-}
-header h5 {
-  width: 734px;
-  height: 22px;
-}
-
-header h1,
-h5 {
-  color: white;
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
   text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.text1,
+.text2 {
+  color: white;
+}
+
+.text1 {
+  font-weight: 500;
+  text-align: center;
+  font-family: "Oswald";
+}
+
+.text2 {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: normal;
 }
 
 .experience {
+  background-image: url(assets/images/whiteExp.svg);
   display: flex;
   list-style-type: none;
-}
-
-.numbers {
-  list-style-type: none;
-  text-align: center;
+  background-color: white;
+  padding: 60px 90px;
+  gap: 90px;
 }
 
 .num {
   color: #f7654a;
-  /* font-family: Oswald; */
+  font-size: 72px;
 }
 
-.year,
+.year {
+  font-weight: 500;
+  font-size: 36px;
+}
+
 .market {
-  color: white;
+  color: #999;
+}
+
+.arena.wrapper {
+  max-width: 1110px;
+  display: flex;
+}
+.partOfArena {
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald";
+}
+
+.partOfArena .photo {
+  width: 350px;
+  height: 380px;
+}
+
+.partOfArena .line {
+  width: 55px;
+  height: 6px;
+  font-family: "Open Sans";
 }
