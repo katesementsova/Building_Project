@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* max-width: 1920px; */
 }
 
 header {
@@ -16,7 +15,7 @@ header {
 }
 
 .wrapper {
-  max-width: 1110px;
+  width: 1110px;
   margin: 0 auto;
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -48,7 +47,9 @@ header {
   list-style-type: none;
   background-color: white;
   padding: 60px 90px;
-  gap: 90px;
+  gap: 150px;
+  justify-content: center;
+  align-items: center;
 }
 
 .num {
@@ -65,14 +66,32 @@ header {
   color: #999;
 }
 
-.arena.wrapper {
+.arenaWrapper {
   max-width: 1110px;
+  margin: 0 auto;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.arenaProject {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: #404149;
+  font-weight: 500;
+  line-height: normal;
+  height: 43px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.arenaParts {
   display: flex;
 }
 .partOfArena {
   display: flex;
   flex-direction: column;
   font-family: "Oswald";
+  color: #404149;
 }
 
 .partOfArena .photo {
@@ -83,5 +102,66 @@ header {
 .partOfArena .line {
   width: 55px;
   height: 6px;
-  font-family: "Open Sans";
+  margin-top: 40px;
+}
+
+.description {
+  font-family: "Open Sans", sans-serif;
+  color: #999;
+}
+
+.smartProjects {
+  margin-top: 100px;
+}
+.smartText {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  margin: 20px 0;
+}
+
+.smartProjectWrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.request {
+  height: 49px;
+  padding: 5px 25px;
+  font-family: "Oswald", sans-serif;
+  border: none;
+}
+
+.whatAreWeDoingWrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.build {
+  background-image: url(assets/images/lightBG.svg);
+  background-repeat: no-repeat;
+  font-family: "Oswald", sans-serif;
+  color: #000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.build img {
+  width: 60px;
+  height: 40px;
+}
+
+.build3parts {
+  display: flex;
+}
+
+.build6parts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }

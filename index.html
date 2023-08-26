@@ -42,14 +42,14 @@
         </div>
       </div>
     </header>
-    <section class="arena">
+    <section class="arena arenaWrapper">
       <h1 class="arenaProject">НАШИ САМЫЕ БОЛЬШИЕ ПРОЕКТЫ</h1>
-      <div class="arena_wrapper">
+      <div class="arenaParts">
         <div class="partOfArena">
           <img class="photo" src="assets/images/arena.svg" />
           <img class="line" src="assets/images/arenaLine.svg" />
           <p>Арена</p>
-          <p>
+          <p class="description">
             Мы сделали самую красивую арену в Европе. Это открытие стало для нас
             прорывной точкой для разивтия на следующие десятилетия. Мы очень
             рады данному еву.
@@ -69,7 +69,7 @@
           <img class="photo" src="assets/images/arena.svg" />
           <img class="line" src="assets/images/arenaLine.svg" />
           <p>Арена</p>
-          <p>
+          <p class="description">
             Мы сделали самую красивую арену в Европе. Это открытие стало для нас
             прорывной точкой для разивтия на следующие десятилетия. Мы очень
             рады данному еву.
@@ -81,12 +81,18 @@
       class="smartProjects"
       style="background-image: url(assets/images/OrangeLine.svg)"
     >
-      <h1 class="smart">САМЫЕ УМНЫЕ ПРОЕКТЫ</h1>
-      <h3 class="realSmart">РЕАЛИЗУЕМ САМЫЕ СМЕЛЫЕ РЕШЕНИЯ В РОССИИ!</h3>
-      <button class="request">ВАШ ЗАПРОС</button>
+      <div class="smartProjectWrapper">
+        <div class="smartText">
+          <h1 class="smart">САМЫЕ УМНЫЕ ПРОЕКТЫ</h1>
+          <h3 class="realSmart">РЕАЛИЗУЕМ САМЫЕ СМЕЛЫЕ РЕШЕНИЯ В РОССИИ!</h3>
+        </div>
+        <button class="request">ВАШ ЗАПРОС</button>
+      </div>
     </section>
     <section class="whatAreWeDoing">
+      <div class="whatAreWeDoingWrapper"></div>
       <h1 class="whatWeDo">ЧЕМ МЫ ЗАНИМАЕМСЯ?</h1>
+      <div class="build3parts">
       <div
         class="build"
         style="background-image: url(assets/images/lightBG.svg)"
@@ -98,9 +104,7 @@
         </p>
       </div>
       <div
-        class="build"
-        style="background-image: url(assets/images/lightBG.svg)"
-      >
+        class="build">
         <img src="assets/images/buildingIcon.svg" />
         <p class="buildings">
           СТРОИТЕЛЬСТВО<br />
@@ -108,19 +112,18 @@
         </p>
       </div>
       <div
-        class="build"
-        style="background-image: url(assets/images/lightBG.svg)"
-      >
+        class="build">
         <img src="assets/images/buildingIcon.svg" />
         <p class="buildings">
           СТРОИТЕЛЬСТВО<br />
           ОФИСНЫХ ЗДАНИЙ
         </p>
+      </div>
       </div>
       <h1 class="whatWeDo">ЧЕМ МЫ ЗАНИМАЕМСЯ?</h1>
+      <div class="build6parts">
       <div
         class="build"
-        style="background-image: url(assets/images/lightBG.svg)"
       >
         <p class="buildings">
           СТРОИТЕЛЬСТВО<br />
@@ -129,17 +132,6 @@
       </div>
       <div
         class="build"
-        style="background-image: url(assets/images/lightBG.svg)"
-      >
-        <img src="assets/images/buildingIcon.svg" />
-        <p class="buildings">
-          СТРОИТЕЛЬСТВО<br />
-          ОФИСНЫХ ЗДАНИЙ
-        </p>
-      </div>
-      <div
-        class="build"
-        style="background-image: url(assets/images/lightBG.svg)"
       >
         <img src="assets/images/buildingIcon.svg" />
         <p class="buildings">
@@ -149,7 +141,6 @@
       </div>
       <div
         class="build"
-        style="background-image: url(assets/images/lightBG.svg)"
       >
         <img src="assets/images/buildingIcon.svg" />
         <p class="buildings">
@@ -159,7 +150,6 @@
       </div>
       <div
         class="build"
-        style="background-image: url(assets/images/lightBG.svg)"
       >
         <img src="assets/images/buildingIcon.svg" />
         <p class="buildings">
@@ -169,7 +159,6 @@
       </div>
       <div
         class="build"
-        style="background-image: url(assets/images/lightBG.svg)"
       >
         <img src="assets/images/buildingIcon.svg" />
         <p class="buildings">
@@ -177,6 +166,16 @@
           ОФИСНЫХ ЗДАНИЙ
         </p>
       </div>
+      <div
+        class="build"
+      >
+        <img src="assets/images/buildingIcon.svg" />
+        <p class="buildings">
+          СТРОИТЕЛЬСТВО<br />
+          ОФИСНЫХ ЗДАНИЙ
+        </p>
+      </div>
+    </div>
     </section>
     <section class="contacts">
       <h1 class="contactsTitle">КОНТАКТЫ</h1>
@@ -200,6 +199,7 @@
         <p class="emailTitle">E-MAIL:</p>
         <p class="email">INFO@VIP.RU</p>
       </div>
+    </div>
     </section>
     <footer style="background-image: url(assets/images/greyLine.svg)">
       <p>© 2019 Строительная компания</p>
