@@ -169,7 +169,7 @@ header {
 
 .build6parts {
   display: grid;
-  gap: 0 30px;
+  gap: 30px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
