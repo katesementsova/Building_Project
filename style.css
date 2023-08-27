@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Oswald", sans-serif;
+}
+
 header {
   padding-top: 192px;
   background-size: cover;
@@ -18,7 +22,6 @@ header {
   width: 1110px;
   margin: 0 auto;
   text-align: center;
-  font-family: "Oswald", sans-serif;
 }
 
 .text1,
@@ -29,7 +32,6 @@ header {
 .text1 {
   font-weight: 500;
   text-align: center;
-  font-family: "Oswald";
 }
 
 .text2 {
@@ -76,27 +78,20 @@ header {
 
 .arenaProject {
   text-align: center;
-  font-family: "Oswald", sans-serif;
   color: #404149;
   font-weight: 500;
-  line-height: normal;
   height: 43px;
   justify-content: center;
   padding-bottom: 50px;
 }
 .arenaParts {
+  gap: 0 30px;
   display: flex;
 }
 .partOfArena {
-  display: flex;
-  flex-direction: column;
+  max-width: 350px;
   font-family: "Oswald";
   color: #404149;
-}
-
-.partOfArena .photo {
-  width: 350px;
-  height: 380px;
 }
 
 .partOfArena .line {
@@ -115,7 +110,6 @@ header {
 }
 .smartText {
   color: #fff;
-  font-family: "Oswald", sans-serif;
   margin: 20px 0;
 }
 
@@ -130,7 +124,6 @@ header {
 .request {
   height: 49px;
   padding: 5px 25px;
-  font-family: "Oswald", sans-serif;
   border: none;
 }
 
@@ -139,16 +132,24 @@ header {
   margin: 0 auto;
 }
 
+.whatWeDo {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
 .build {
   background-image: url(assets/images/lightBG.svg);
   background-repeat: no-repeat;
-  font-family: "Oswald", sans-serif;
   color: #000;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px;
+  width: 350px;
+  height: 250px;
 }
 
 .build img {
@@ -156,12 +157,70 @@ header {
   height: 40px;
 }
 
+.buildings {
+  margin-top: 20px;
+}
+
 .build3parts {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 30px;
 }
 
 .build6parts {
   display: grid;
+  gap: 0 30px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+}
+
+.contacts {
+  max-width: 1110px;
+  margin: 80px auto 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contactsParts {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+}
+
+.partOfContact {
+  width: 255;
+  height: 191;
+}
+
+.contactsParts img {
+  width: 71px;
+  height: 29px;
+}
+
+.contTitle {
+  font-weight: 500;
+  color: #999999;
+  margin: 10px 0;
+}
+
+.email {
+  color: #f7654a;
+}
+
+.emailpartOfContact {
+  width: 255;
+  height: 155;
+}
+
+.footerWrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  height: 82px;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
