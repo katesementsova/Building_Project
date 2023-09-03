@@ -18,6 +18,12 @@ header {
   flex-direction: column;
 }
 
+.wrapperProjects {
+  max-width: 734px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .wrapper {
   width: 1110px;
   margin: 0 auto;
@@ -31,47 +37,68 @@ header {
 
 .text1 {
   font-weight: 500;
-  text-align: center;
+  height: 171px;
+  font-size: 64px;
+  line-height: 94.85px;
 }
 
 .text2 {
-  padding-top: 10px;
+  margin-top: 35px;
+  height: 22px;
   font-weight: 400;
   font-size: 18px;
   text-transform: uppercase;
   font-style: normal;
-  line-height: normal;
+  line-height: 26.68px;
 }
 
 .experience {
+  margin-top: 20px;
   background-image: url(assets/images/whiteExp.svg);
   display: flex;
   list-style-type: none;
   background-color: white;
-  padding: 60px 90px;
-  gap: 150px;
+  gap: 30px;
+  padding: 130px 57px;
   justify-content: center;
   align-items: center;
+}
+
+.numbers {
+  width: 190px;
+  height: 186px;
 }
 
 .num {
   color: #f7654a;
   font-size: 72px;
+  line-height: 106.7px;
+  width: 190px;
+  height: 86px;
 }
 
 .year {
   font-weight: 500;
   font-size: 36px;
+  line-height: 53.35px;
+  width: 190px;
+  height: 43px;
 }
 
 .market {
   color: #999;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26.68px;
+  width: 190px;
+  height: 22px;
 }
 
 .arenaWrapper {
   max-width: 1110px;
   margin: 0 auto;
-  padding-top: 200px;
+  margin-top: 200px;
+  height: 681px;
   display: flex;
   flex-direction: column;
 }
@@ -82,14 +109,15 @@ header {
   font-weight: 500;
   height: 43px;
   justify-content: center;
-  padding-bottom: 50px;
+  font-size: 36px;
+  line-height: 53.35px;
 }
 .arenaParts {
-  gap: 0 30px;
+  margin-top: 103px;
+  gap: 30px;
   display: flex;
 }
 .partOfArena {
-  max-width: 350px;
   font-family: "Oswald";
   color: #404149;
 }
@@ -97,45 +125,84 @@ header {
 .partOfArena .line {
   width: 55px;
   height: 6px;
-  margin-top: 40px;
+  margin-top: 45px;
+}
+
+.title {
+  width: 142px;
+  height: 29px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35.57px;
 }
 
 .description {
+  margin-top: 20px;
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.79px;
   color: #999;
 }
 
 .smartProjects {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 .smartText {
   color: #fff;
-  margin: 20px 0;
+  margin: 30px 0;
+}
+
+.smart {
+  width: 537px;
+  height: 57px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71.14px;
+}
+.realSmart {
+  margin-top: 20px;
+  width: 562px;
+  height: 29px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35.57px;
 }
 
 .smartProjectWrapper {
   max-width: 1110px;
   margin: 0 auto;
+  height: 181px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .request {
+  width: 175;
   height: 49px;
-  padding: 5px 25px;
+  margin-top: 73px;
+  margin-bottom: 59px;
+  padding: 13px 46px 15px 47px;
   border: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20.75px;
 }
 
 .whatAreWeDoingWrapper {
   max-width: 1110px;
   margin: 0 auto;
+  margin-top: 150px;
 }
 
 .whatWeDo {
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53.35px;
+  height: 43px;
 }
 
 .build {
@@ -147,29 +214,45 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
   width: 350px;
   height: 250px;
 }
 
 .build img {
+  margin-top: 59px;
   width: 60px;
   height: 40px;
 }
 
 .buildings {
-  margin-top: 20px;
+  margin-top: 30px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 31.12px;
+  margin-bottom: 59px;
 }
 
 .build3parts {
+  margin-top: 66px;
+  height: 359px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0 30px;
 }
 
+.whatWeDoSecond {
+  margin-top: 150px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53.35px;
+  height: 43px;
+}
+
 .build6parts {
+  margin-top: 66px;
   display: grid;
-  gap: 30px;
+  gap: 35px 30px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
@@ -183,9 +266,8 @@ header {
 }
 
 .contactsParts {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  margin-top: 60px;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -197,12 +279,33 @@ header {
 .contactsParts img {
   width: 71px;
   height: 29px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 40.31px;
+}
+
+.contactsTitle {
+  margin-top: 112px;
+  font-size: 36px;
+  line-height: 53.35px;
+  height: 53px;
 }
 
 .contTitle {
+  margin-top: 36px;
   font-weight: 500;
+  font-size: 24px;
   color: #999999;
-  margin: 10px 0;
+}
+
+.address,
+.phone,
+.hours,
+.email {
+  margin-top: 25px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35.57px;
 }
 
 .email {
@@ -214,12 +317,19 @@ header {
   height: 155px;
 }
 
+footer {
+  margin-top: 60px;
+}
+
 .footerWrapper {
   max-width: 1110px;
   margin: 0 auto;
+  padding: 0 30px;
   height: 82px;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   display: flex;
   justify-content: space-between;
   align-items: center;
