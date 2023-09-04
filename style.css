@@ -8,329 +8,321 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
-header {
+/* единый wrapper для всей страницы */
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.header {
   padding-top: 192px;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(assets/images/bridge.svg);
-  max-height: 740px;
+  color: #ffffff;
+}
+
+.header-wrapper {
   display: flex;
+  justify-content: end;
   flex-direction: column;
+  align-items: center;
 }
 
-.wrapperProjects {
+.header-content {
   max-width: 734px;
-  margin: 0 auto;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.wrapper {
-  width: 1110px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.text1,
-.text2 {
-  color: white;
-}
-
-.text1 {
-  font-weight: 500;
-  height: 171px;
+.header-content .heading {
   font-size: 64px;
-  line-height: 94.85px;
+  font-weight: 500;
+  letter-spacing: 1.28px;
+  margin-bottom: 35px;
 }
 
-.text2 {
-  margin-top: 35px;
-  height: 22px;
-  font-weight: 400;
+.header-content .description {
   font-size: 18px;
   text-transform: uppercase;
-  font-style: normal;
-  line-height: 26.68px;
+  font-weight: 400;
 }
 
-.experience {
-  margin-top: 20px;
-  background-image: url(assets/images/whiteExp.svg);
+.header-experience {
   display: flex;
-  list-style-type: none;
-  background-color: white;
+  background-color: #ffffff;
+  padding: 60px 130px;
   gap: 30px;
-  padding: 130px 57px;
-  justify-content: center;
-  align-items: center;
 }
 
-.numbers {
+.header-experience-item {
   width: 190px;
-  height: 186px;
-}
-
-.num {
-  color: #f7654a;
-  font-size: 72px;
-  line-height: 106.7px;
-  width: 190px;
-  height: 86px;
-}
-
-.year {
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 53.35px;
-  width: 190px;
-  height: 43px;
-}
-
-.market {
-  color: #999;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 26.68px;
-  width: 190px;
-  height: 22px;
-}
-
-.arenaWrapper {
-  max-width: 1110px;
-  margin: 0 auto;
-  margin-top: 200px;
-  height: 681px;
-  display: flex;
-  flex-direction: column;
-}
-
-.arenaProject {
   text-align: center;
-  color: #404149;
   font-weight: 500;
-  height: 43px;
-  justify-content: center;
-  font-size: 36px;
-  line-height: 53.35px;
-}
-.arenaParts {
-  margin-top: 103px;
-  gap: 30px;
-  display: flex;
-}
-.partOfArena {
-  font-family: "Oswald";
-  color: #404149;
 }
 
-.partOfArena .line {
+/* стили для первого элемента <p> в <div>'е с классом .header-experience-item */
+.header-experience-item p:nth-child(1) {
+  font-size: 72px;
+  color: #f7654a;
+  margin-bottom: 25px;
+}
+
+/* стили для второго элемента <p> в <div>'е с классом .header-experience-item */
+.header-experience-item p:nth-child(2) {
+  font-size: 36px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* стили для третьего элемента <p> в <div>'е с классом .header-experience-item */
+.header-experience-item p:nth-child(3) {
+  font-size: 18px;
+  color: #999;
+}
+
+.projects {
+  padding-top: 200px;
+}
+
+.projects-heading {
+  font-size: 36px;
+  font-weight: 500;
+  color: #404149;
+  text-align: center;
+}
+
+.projects-list {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.projects-item {
+  max-width: 350px;
+}
+
+.projects-item .line {
   width: 55px;
   height: 6px;
-  margin-top: 45px;
+  margin: 45px 0 15px 0;
+  background-color: #f7654a;
 }
 
-.title {
-  width: 142px;
-  height: 29px;
-  text-align: left;
+.projects-item .title {
   font-weight: 500;
   font-size: 24px;
-  line-height: 35.57px;
+  color: #404149;
 }
 
-.description {
-  margin-top: 20px;
+.projects-item .description {
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21.79px;
-  color: #999;
-}
-
-.smartProjects {
-  margin-top: 200px;
-}
-.smartText {
-  color: #fff;
-  margin: 30px 0;
-}
-
-.smart {
-  width: 537px;
-  height: 57px;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 71.14px;
-}
-.realSmart {
+  color: #999999;
   margin-top: 20px;
-  width: 562px;
-  height: 29px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 35.57px;
 }
 
-.smartProjectWrapper {
-  max-width: 1110px;
-  margin: 0 auto;
-  height: 181px;
+.smart-projects {
+  margin-top: 200px;
+  background-color: #f7654a;
+  padding: 40px 0;
+}
+
+.smart-projects-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.request {
-  width: 175;
-  height: 49px;
-  margin-top: 73px;
-  margin-bottom: 59px;
-  padding: 13px 46px 15px 47px;
-  border: none;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20.75px;
+.smart-projects-content {
+  color: #ffffff;
+  font-weight: 700;
 }
 
-.whatAreWeDoingWrapper {
-  max-width: 1110px;
-  margin: 0 auto;
-  margin-top: 150px;
+.smart-projects-content .heading {
+  font-size: 48px;
+  letter-spacing: 0.96px;
 }
 
-.whatWeDo {
+.smart-projects-content .description {
+  font-size: 24px;
+  letter-spacing: 0.48px;
+}
+
+.smart-projects-cta {
+  padding: 15px 45px;
+  background-color: #ffffff;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* services */
+
+.services {
+  padding-top: 150px;
+}
+
+.services-heading {
   text-align: center;
   font-weight: 500;
   font-size: 36px;
-  line-height: 53.35px;
-  height: 43px;
+  margin-bottom: 70px;
 }
 
-.build {
-  background-image: url(assets/images/lightBG.svg);
-  background-repeat: no-repeat;
-  color: #000;
-  text-align: center;
+.services-list-first {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 150px;
+}
+
+.services-list-second {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.services-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 350px;
-  height: 250px;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 60px 90px;
+  gap: 30px;
+  max-width: 350px;
 }
 
-.build img {
-  margin-top: 59px;
-  width: 60px;
-  height: 40px;
-}
-
-.buildings {
-  margin-top: 30px;
+.services-item .heading {
+  width: 175px;
   font-size: 21px;
   font-weight: 500;
-  line-height: 31.12px;
-  margin-bottom: 59px;
+  letter-spacing: 0.42px;
 }
 
-.build3parts {
-  margin-top: 66px;
-  height: 359px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0 30px;
-}
-
-.whatWeDoSecond {
-  margin-top: 150px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 53.35px;
-  height: 43px;
-}
-
-.build6parts {
-  margin-top: 66px;
-  display: grid;
-  gap: 35px 30px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-
-.contacts {
-  max-width: 1110px;
-  margin: 80px auto 40px;
+.contacts-wrapper {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.contactsParts {
+.contacts-list {
   margin-top: 60px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 
-.partOfContact {
+.contacts-item {
   width: 255px;
-  height: 191px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.contactsParts img {
-  width: 71px;
-  height: 29px;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 40.31px;
+.contacts-item img {
+  display: block;
+  max-width: 70px;
+  max-height: 50px;
+  margin-bottom: 20px;
 }
 
-.contactsTitle {
-  margin-top: 112px;
+.contacts-title {
+  margin-top: 110px;
   font-size: 36px;
-  line-height: 53.35px;
-  height: 53px;
 }
 
-.contTitle {
-  margin-top: 36px;
+.contacts-item .title {
   font-weight: 500;
   font-size: 24px;
   color: #999999;
+  margin-bottom: 25px;
 }
 
-.address,
-.phone,
-.hours,
-.email {
-  margin-top: 25px;
+.contacts-item .description {
   font-weight: 500;
   font-size: 24px;
-  line-height: 35.57px;
+  color: #000000;
+  text-decoration: none;
 }
 
-.email {
+.contacts-item a {
+  transition: all 150ms;
+}
+
+.contacts-item a:hover {
   color: #f7654a;
 }
 
-.emailpartOfContact {
-  width: 255px;
-  height: 155px;
-}
-
-footer {
+.footer {
   margin-top: 60px;
+  background-color: #404149;
+  padding: 30px 0;
 }
 
-.footerWrapper {
-  max-width: 1110px;
-  margin: 0 auto;
-  padding: 0 30px;
-  height: 82px;
-  color: #ffffff;
+.footer-wrapper {
   font-family: "Open Sans", sans-serif;
+  color: #ffffff;
   font-size: 16px;
-  font-weight: 400;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 1110px) {
+  .wrapper {
+    padding: 0 16px;
+  }
+
+  .header-experience {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .projects-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-list-first,
+  .services-list-second {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .contacts-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-list {
+    grid-template-columns: 1fr;
+  }
+
+  .services-list-first,
+  .services-list-second {
+    grid-template-columns: 1fr;
+  }
+
+  .smart-projects-wrapper {
+    text-align: center;
+    flex-direction: column;
+    gap: 30px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .contacts-list {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 10px 0;
+  }
 }
